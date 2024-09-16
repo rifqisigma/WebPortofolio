@@ -1,0 +1,34 @@
+
+
+.popup-qna{
+     font-family: "Chakra Petch", sans-serif;
+     background-color: rgb(46, 46, 46);
+     position: fixed;
+     top: 5vh;
+     left: 3.5%;
+     z-index: 97;
+     width: 93%;
+     height: 90vh;
+     display: flex;
+}
+.btnClose{
+     cursor: pointer;
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     width: 100px;
+     height: 100px;
+     background-color: aliceblue;
+}
+.popup-qna .columnAsk ,.popup-qna .columnAnswer{
+     margin: auto;
+     width: 45%;
+     height: 80%;
+     color: rgb(246, 246, 246);
+
+}
+.answerCover ,.askCover{
+     width: 100%;
+     height: max-content;
+     overflow: hidden;
+}

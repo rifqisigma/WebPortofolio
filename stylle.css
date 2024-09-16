@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+ body{
+     overflow-y: hidden;
+ }
+.frame{
+     position: relative;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+}
+
+main{
+     margin: auto;
+     background-color: rgb(230, 230, 230);
+
+}
+
+/* the wall from css kelaz*/
+.frame .wall{
+     position: fixed;
+     z-index: 98;
+     background-color: white;
+}
+.frame .wall:nth-last-of-type(1){
+     /* left */
+     width: 3.5%;
+     height: 100vh;
+     left: 0;
+     top: 0;
+}
+.frame .wall:nth-last-of-type(2){
+     /* right */
+     width: 3.5%;
+     height: 100vh;
+     right: 0;
+     top: 0;
+}
+.frame .wall:nth-last-of-type(3){
+     /* top */
+     width: 100%;
+     height: 5%;
+     left: 0;
+     top: 0;
+}
+.frame .wall:nth-last-of-type(4){
+     /* bottom */
+     width: 100%;
+     height: 5%;
+     left: 0;
+     bottom: 0;
+}
+/* end styling the wall */
+
+section{
+     font-family: "New Amsterdam", sans-serif;
+}
+
+/* sec-one */
+.sec-one{
+     position: relative;
+     display: flex;
+     width: 100%;
+     height: 100vh;
+     overflow: hidden;
+}
+.sec{
+     width: 100%;
+     height: 100vh;
+     margin: auto;
+     display: flex;
+     overflow: hidden !important;
+}
+.sec-one .sec-one-text{
+     margin: auto;
+     transform-style: preserve-3d;
+     transform: rotateX(-20deg) rotateY(20deg) translateY(15%);
+     text-align: center;
+     color: rgb(43, 43, 43);
+     z-index: 1;
+}
+.box h1{
+     font-size: 11em;
+     letter-spacing: 7px;
+     line-height: 80%;    
+     
+
+}
+.sec-one-text h2{
+     font-size: 2em;
+     letter-spacing: 1px;
+}
+.sec-one-text .box{
+     display: inline-block;
+     width: auto;
+     height: auto;
+     overflow: hidden;
+}
+
+/* sec-two */
+.sec-two{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     flex-wrap: wrap;
+     align-content: space-around;
+}
+.image-two-cover{
+     overflow: hidden;
+     margin: auto;
+     width: 50%;
+     height: 35vh;
+}
+.image-two-cover img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.sec-two .sec-two-text{
+     text-align: left;
+     margin: auto;
+     width: 55%;
+     padding: 0 5% 0 5%;
+    
+}
+.sec-two-text h2{
+     font-size: 1.5em;
+     font-weight: 100;
+     color: white;
+     padding: 5px 15px;
+     width: max-content;
+     background-color: black;
+}
+.sec-two-text h1{
+     font-size: 2em;
+     margin-top: 10px;
+     font-family: "Jost", sans-serif;
+     font-weight: 400;
+     overflow: hidden;
+     
+
+}
+.char{
+     display: inline-block;
+}
+
+/*sec-three*/
+.sec-three{
+     position: relative;
+     overflow: hidden;
+}
+.container{
+     display: flex;
+    
+     width: 100vw;
+     .col {
+         display: flex;
+        
+     }
+     section {
+          width: 100vw ;
+          height: 100vh;
+          display: flex;
+     }
+ 
+}
+.container section .coverCenter{
+     margin: auto;
+     width: 93%;
+     height: 90%;
+     display: flex;
+}
+.coverCenter .layerOfStuck,.coverCenter .layerOfScroll{
+     margin: auto;
+     width: 50%;
+     height: 100%;
+
+}
+.layerOfStuck{
+     display: flex;
+}
+.layerOfStuck .layerOfstuckCenter{
+     margin: auto;
+     transform-style: preserve-3d;
+     transform: rotateX(20deg) rotateY(-15deg) translateY(0%);
+}
+.layerOfstuckCenter h1{
+     
+     text-align: left;
+     color: rgb(43, 43, 43);  
+     font-size: 8em;
+     letter-spacing: 7px;
+     line-height: 80%;   
+
+}
+.layerOfstuckCenter .cover-text-three{
+     display: inline-block; 
+     overflow: hidden;
+
+}
+.layerOfScroll{
+     display: flex;
+     justify-content: left;
+}
+.layerOfScroll .list{
+     display: flex;
+     flex-wrap: wrap;
+
+     height:100%;
+     width: 60%;
+  
+}
+
+.cover-text{
+     margin: auto;
+     width: 100%;
+     height: auto;
+     margin-bottom: 20px;
+     overflow: hidden;
+
+}
+.cover-text h1{
+     font-family: "Chakra Petch", sans-serif;
+     font-weight: ;
+     font-size: 3em;
+}
+
+/*sec-four*/
+
+.sec-four{
+     width: 100%;
+     height: 50vh;
+     display: flex;
+}
+.sec-four .cover-text-four{
+     position: relative;
+     width: 37vw;
+     height: 17vh;
+     margin: auto;
+     overflow: hidden;
+  
+     display: flex;
+}
+.cover-text-four h1{
+     margin: auto;
+     font-size: 7em;
+     letter-spacing: 3px;
+     color: rgb(255, 255, 255);    
+     background-color: rgb(43, 43, 43);
+     padding: 5px 15px; 
+}
+.cover-text-four .bg{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+          background-color: rgb(230, 230, 230);
+     z-index: 1;
+
+}
+
+/*sec-five*/
+.sec-five{
+     width: 100%;
+     height: 90vh;
+     display: flex;
+    
+}
+.sec-five .stack{
+     width: 80vw;
+     height: 90vh;
+ 
+     margin: auto;
+     position: relative;
+     display: flex;
+}
+ 
+.absoluteCover{
+     /* for sec 5 adn 7*/
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     display: flex;
+}
+.stack h1{
+     text-align: center;
+}
+.stack h1:nth-child(1){
+     font-size: 15em;
+     line-height: 80%;
+     margin: auto;   
+     letter-spacing: 3px;
+     color: rgba(0, 0, 0, 0.346);
+
+}
+.stack h1:nth-child(2){
+     font-family: "Chakra Petch", sans-serif;
+     font-size: 4em;
+     margin: auto;
+     z-index: 1;
+}
+
+/* sec-six */
+.sec-six{
+     display: flex;
+     margin: 30vh 0 30vh 0;
+     width: 100%;
+     height: 80vh;
+     
+     
+
+}
+.sec-six .coverCenterSix{
+     position: relative;
+     margin: auto;
+     width: 93%;
+     height: 80vh;
+     display: flex;
+     justify-content: left;
+     overflow: hidden;
+}
+.coverCenterSix .imgLocationMe{
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     z-index: 0;
+     scale: 1.3;
+     
+}
+.sec-six h1{
+   margin: 30px;
+     font-size: 3em;
+     color: white;
+     z-index: 1;
+     letter-spacing: 3px;
+     font-weight: thin;
+}
+
+
+
+
+/* sec-seven */
+.sec-seven{
+     width: 100%;
+     height: 180vh;
+     display: flex;
+    
+}
+.sec-seven .coverCenterSeven{
+     margin: auto;
+     height: 120vh;
+     width: 30vw;
+}
+.coverCenterSeven img{
+     width: 30vw;
+     height: 60vh;
+     object-fit: cover;
+}
+.coverCenterSeven .contact{
+     margin: 60px 0 60px 0;
+     position: relative;
+     width: 30vw;
+     height: 40vh;
+     display: flex;
+
+}
+.coverCenterSeven h1,.absoluteCover h2{
+     margin: auto;
+     transform-style: preserve-3d;
+     transform: rotateX(-15deg) rotateY(15deg) translateY(0%);
+     font-size: 8em;
+     line-height: 80%;
+     letter-spacing: 6px;
+     text-align: center;
+}
+.coverCenterSeven h1{
+     text-decoration: line-through;
+     color: rgba(0, 0, 0, 0.281);
+}
+.absoluteCover h2{
+     color: rgb(43, 43, 43);
+     z-index: 1;
+}
+.coverCenterSeven a{
+     text-decoration: none;
+     list-style: none;
+     color: black;
+     font-family: "Jost", sans-serif;
+     text-align: center;
+     width: 30vw;
+     height: auto;
+}
+
+a h2{
+     font-size: 1.3em;
+}
+
+button{
+     cursor: pointer;
+    padding: 5px 10px;
+     background-color: rgb(54, 54, 54);
+     border: none;
+     color: white;
+}
